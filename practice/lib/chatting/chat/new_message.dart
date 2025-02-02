@@ -19,7 +19,7 @@ class _NewMessageState extends State<NewMessage> {
   void _sendToServer() async {
     try {
       final response = await Dio().post(
-        'http://localhost:8000/api/chat/',
+        'http://10.0.2.2:8000/api/chat/',
         data: {
           "uid": _uid,
         },
